@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fininho - Home</title>
+    <!-- icone do site-->
+
+    <!-- aplicando boodstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="icon" href="img/icon.png">
+
+    <!-- estilo customizado-->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <style>
+        @font-face {
+            font-family: "Arturo Trial";
+            src: url("fonts/ArturoTrial-Bold.woff");
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- incio do contanier-->
+    <div id="container">
+        <!-- início do cabeçalho -->
+        <header>
+            <!-- logo -->
+            <div class="logo">
+                <a href=""><img src="img/logoNova.png" alt="logo"></a>
+            </div>
+    
+            <!-- botão menu responsivo -->
+            <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+    
+            <!-- início nav -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <!-- fim nav -->
+        </header>
+    </div>
+    
+        <!-- fim do cabecalho-->
+
+        <!-- criação de postagem de página -->
+        <article>
+            <div class="barbearia move1">
+                <div class="conteudo-titulo">
+                    <span class="titulo move"> Cabeleireiro </span>
+                </div>
+            </div>
+
+            <!-- criação da secao-->
+            <section>
+                <!-- inicio da caixa-->
+                <div class="move caixas estilo1">
+                    <h3> Serviços (Corte Masculino) </h3>
+                    <!-- imagem corte masculino -->
+                    <div class="img-caixa">
+                        <img src="img/masculino.jpg" alt="masculino">
+                    </div>
+                    <!-- fim imagem masculino--> <br>
+
+                    <button type="button" class="btn btn-dark" style="font-weight: bold;" data-bs-toggle="modal" data-bs-target="#modal-masculino">
+                        Clique Aqui
+                    </button>
+                </div>
+                <!-- fim da caixa-->
+
+
+                <!-- inicio da caixa-->
+                    <div class="move caixas estilo2">
+                       <h3> Serviços (Corte Infantil)</h3>
+                        <!-- imagem corte masculino -->
+                        <div class="img-caixa">
+                        <img src="img/criança.jpg" alt="infantil">
+                    </div>
+                    <!-- fim imagem masculino--> <br>
+
+                    <button type="button" class="btn btn-dark" style="font-weight: bold;" data-bs-toggle="modal" data-bs-target="#modal-infantil">
+                        Clique Aqui
+                    </button>
+                </div>
+                <!-- fim da caixa-->
+            </section>
+            <!-- fim da secao-->
+        </article>
+
+        <!-- Modal Corte Masculino-->
+        <div class="modal fade" id="modal-masculino" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content text-white" style="background-color:  rgb(24, 24, 24);"> <!-- Adicionando classes Bootstrap -->
+                <div class="modal-header">
+                  <h5 class="modal-title" style="font-weight: bold;">SERVIÇOS (CORTE MASCULINO)</h5>
+                  <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>  
+                <div class="modal-body">
+
+                  <h3> Corte Masculino - R$ 35,00</h3>
+
+                  <p>
+                    Aqui, você tem a liberdade de escolher o corte que mais combina com você! O serviço é feito com atenção aos detalhes para garantir um resultado que te deixe satisfeito.</p>
+
+                    
+                    <h6>💈 Atendimento com Hora Marcada </h6>
+
+                    ✔ Escolha o estilo do seu corte <br>
+                    ✔ Sem filas ou esperas 
+                   </p>
+                    
+                    <p>Agende seu horário e renove seu visual! 💇‍♂️ </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Modal Corte Infantil -->
+        <div class="modal fade" id="modal-infantil" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content text-white" style="background-color:  rgb(24, 24, 24);"> <!-- Adicionando classes Bootstrap -->
+                <div class="modal-header">
+                  <h5 class="modal-title" style="font-weight: bold;">SERVIÇOS (CORTE INFANTIL)</h5>
+                  <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>  
+                <div class="modal-body">
+
+                    <h3> Corte Infantil - R$ 35,00</h3>
+
+                    <p>
+                      O corte ideal para os pequenos, feito com paciência e cuidado para garantir conforto e um resultado bonito. Aqui, a criança pode escolher o estilo que mais gosta e sair com um visual renovado!
+                    </p>
+                    
+                    <h6>💈 Atendimento com Hora Marcada </h6>
+                    
+                    ✔ Escolha o estilo do corte <br>  
+                    ✔ Sem filas ou esperas  
+                    
+                    <p>Agende seu horário e garanta um corte prático e confortável para seu filho! ✂️👦</p>
+                    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+
+        <!-- fim da criação de postagem de página-->
+
+        <!-- inicio do rodape-->
+        <footer>
+            <div id="conteudo-rodape">
+                <div class="rodape-coluna move">
+                    <h3> <img src="img/localizacao.png" alt="localizacao" width="30">Endereço</h3>
+                    <p>Rua Capitão Jerônimo Fortunato
+                      871 - Centro - TANABI - SP <br>
+                    </p>
+
+                </div>
+
+                <div class="rodape-coluna move">
+                    <h3> <img src="img/telefone.png" alt="telefone" width="30"> Contato</h3>
+                    <p>Telefone 1: (17) 99712-8383
+                        Telefone 2: (11) 99162-1785<br>
+                    </p>
+
+                </div>
+            </div>
+
+            <p class="rodape-direitos move">&copy; 2025 - Todos os direitos reservados</p>
+        </footer>
+
+        <!-- fim do rodape -->
+    </div>
+    <!-- fim do contanier-->
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav-menu');
+      
+        toggle.addEventListener('click', () => {
+          nav.classList.toggle('active');
+        });
+      </script>
+      
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+    ScrollReveal().reveal('.move', {
+      origin: 'bottom',     // de onde o elemento aparece
+      distance: '50px',     // distância do movimento
+      duration: 1000,       // duração da animação (ms)
+      delay: 250,           // atraso antes de iniciar
+      easing: 'ease-in-out',
+      reset: true          // se true, repete a animação ao voltar
+    });
+
+    ScrollReveal().reveal('.move1', {
+      origin: 'bottom',     // de onde o elemento aparece
+      distance: '50px',     // distância do movimento
+      duration: 800,       // duração da animação (ms)
+      delay: 150,           // atraso antes de iniciar
+      easing: 'ease-in-out',
+      reset: true          // se true, repete a animação ao voltar
+    });
+  </script>
+  
+
+</html>

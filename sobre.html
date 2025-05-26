@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fininho - Sobre</title>
+    <link rel="icon" href="img/icon.png">
+
+    <!-- estilo customizado-->
+    <link rel="stylesheet" href="css/sobre.css">
+
+</head>
+
+<body>
+
+    <!-- inicio do container -->
+    <div id="contanier">
+        <!-- inicio do cabecalho-->
+        <header>
+            <!-- logo -->
+            <div class="logo">
+                <a href=""><img src="img/logoNova.png" alt="logo"></a>
+            </div>
+
+            <!-- botão menu responsivo -->
+            <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+
+            <!-- início nav -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <!-- fim nav -->
+        </header>
+        <!-- fim do cabecalho-->
+
+        <!-- fim do contanier -->
+
+        <!-- criação de postagem da página-->
+        <article>
+            <section>
+                <!-- inicio da caixa-->
+                <div class="caixa move">
+                    <!-- incio do local-->
+                    <div class="local">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!4v1744325019898!6m8!1m7!1s26VHRkBBaqyUnKPfE-PgfQ!2m2!1d-20.6285215487559!2d-49.65351056343872!3f174.91824444062445!4f0.10816142519351502!5f0.7820865974627469"
+                            width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <!-- fim do local-->
+                     
+                    <!-- inicio do texto-->
+                    <div class="texto">
+                        <h2>Sobre nós</h2> 
+                        <p>
+                            No nosso espaço, acreditamos que um bom corte de cabelo faz toda a diferença.  
+                            Com um ambiente confortável e atendimento personalizado, oferecemos cortes modernos e clássicos  
+                            para atender a todos os estilos. Nossa missão é proporcionar um serviço de qualidade,  
+                            fazendo com que cada cliente saia satisfeito e confiante.
+                        </p>
+                    
+                        <br>
+                        <h3>Endereço:</h3>
+                        <p>871 R. Cap. Jerônimo Fortunato, Tanabi - SP</p> <br>
+                    
+                        <h3>Horário de atendimento:</h3>
+                        <p>Segunda a sábado:</p>
+                         
+                        <p>8:00 às 12:00</p> 
+                        <p>13:30 às 19:00</p> 
+                        <br>
+                        <p><strong>Agende seu horário e venha cuidar do seu visual com a gente! </strong></p>
+                    </div>
+                    
+                    <!-- fim do texto-->
+                </div>
+                <!-- fim da caixa-->
+           </section>
+        </article>
+        <!-- fim da criação de postagem de página-->
+
+
+        <!-- inicio do rodape -->
+        <footer>
+            <div id="conteudo-rodape">
+                <div class="rodape-coluna move">
+                    <h3> <img src="img/localizacao.png" alt="localizacao" width="30">Endereço</h3>
+                    <p>Rua Capitão Jerônimo Fortunato
+                        871 - Centro - TANABI - SP <br>
+                    </p>
+
+                </div>
+
+                <div class="rodape-coluna move">
+                    <h3> <img src="img/telefone.png" alt="telefone" width="30"> Contato</h3>
+                    <p>Telefone 1: (17) 99712-8383
+                        Telefone 2: (11) 99162-1785<br>
+                    </p>
+
+                </div>
+            </div>
+
+            <p class="rodape-direitos move">&copy; 2025 - Todos os direitos reservados</p>
+        </footer>
+        <!-- fim do rodape -->
+
+        <script>
+            const toggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav-menu');
+
+            toggle.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+        </script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script>
+            ScrollReveal().reveal('.move', {
+              origin: 'bottom',     // de onde o elemento aparece
+              distance: '50px',     // distância do movimento
+              duration: 1000,       // duração da animação (ms)
+              delay: 200,           // atraso antes de iniciar
+              easing: 'ease-in-out',
+              reset: true          // se true, repete a animação ao voltar
+            });
+          </script>
+
+</body>
+
+</html>

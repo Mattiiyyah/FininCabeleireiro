@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fininho - Contato</title>
+    <link rel="icon" href="img/icon.png" />
+
+    <!-- estilo customizado-->
+    <link rel="stylesheet" href="css/contato.css" />
+  </head>
+
+  <body>
+    <!-- inicio do contanier-->
+    <div id="contanier">
+      <!-- início do cabeçalho -->
+      <header>
+        <!-- logo -->
+        <div class="logo">
+          <a href=""><img src="img/logoNova.png" alt="logo" /></a>
+        </div>
+
+        <!-- botão menu responsivo -->
+        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+
+        <!-- início nav -->
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="">Contato</a></li>
+          </ul>
+        </nav>
+        <!-- fim nav -->
+      </header>
+      <!-- fim do cabecalho-->
+    </div>
+    <!-- fim do contanier-->
+
+    <!-- criação da postagem-->
+    <article>
+      <!-- criação de conteudo da página-->
+      <section>
+        <!-- início da caixa -->
+        <div class="caixas estilo1">
+          <!-- WhatsApp -->
+          <div class="contato">
+            <img src="img/whatsapp.png" alt="whatsapp" />
+            <p id="what"></p>
+          </div>
+
+          <!-- Vivo -->
+          <div class="contato">
+            <img src="img/vivo.png" style="border-radius: 50%" alt="vivo" />
+            <p id="vivo"></p>
+          </div>
+
+          <!-- Claro -->
+          <div class="contato">
+            <img src="img/claro.png" style="border-radius: 50%" alt="claro" />
+            <p id="claro"></p>
+          </div>
+        </div>
+
+        <!-- inicio da caixa -->
+        <div class="caixas estilo2">
+          <!-- inicio do qr-code -->
+          <div class="qr-code">
+            <img src="img/qrcode.png" alt="qrcode" />
+            <h2>Caso prefira acessar através de link, clique abaixo</h2>
+            <br />
+            <a href="https://wa.me/qr/XLK7WQXRJUHJC1">Clique aqui</a>
+          </div>
+
+          <!-- fim do qr-code -->
+        </div>
+        <!-- fim da caixa-->
+      </section>
+      <!-- fim da criação de conteudo da página-->
+    </article>
+    <!-- fim da criação da postagem-->
+
+    <!-- inicio do rodape -->
+    <footer>
+      <div id="conteudo-rodape">
+        <div class="rodape-coluna move">
+          <h3>
+            <img
+              src="img/localizacao.png"
+              alt="localizacao"
+              width="30"
+            />Endereço
+          </h3>
+          <p>
+            Rua Capitão Jerônimo Fortunato 871 - Centro - TANABI - SP <br />
+          </p>
+        </div>
+
+        <div class="rodape-coluna move">
+          <h3>
+            <img src="img/telefone.png" alt="telefone" width="30" /> Contato
+          </h3>
+          <p>Telefone 1: (17) 99712-8383 Telefone 2: (11) 99162-1785<br /></p>
+        </div>
+      </div>
+
+      <p class="rodape-direitos move">
+        &copy; 2025 - Todos os direitos reservados
+      </p>
+    </footer>
+    <!--- fim do rodape -->
+
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nav-menu");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+      ScrollReveal().reveal(".move", {
+        origin: "bottom", // de onde o elemento aparece
+        distance: "50px", // distância do movimento
+        duration: 1000, // duração da animação (ms)
+        delay: 200, // atraso antes de iniciar
+        easing: "ease-in-out",
+        reset: true, // se true, repete a animação ao voltar
+      });
+    </script>
+
+    <!-- Anime.js -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+    <script>
+      const contatos = [
+        { id: "what", texto: "(17) 99123-4567" },
+        { id: "vivo", texto: "(17) 99712-8383" },
+        { id: "claro", texto: "(17) 99162-1785" },
+      ];
+
+      contatos.forEach((contato, index) => {
+        const container = document.getElementById(contato.id);
+
+        // Cria span para cada letra
+        contato.texto.split("").forEach((letra) => {
+          const span = document.createElement("span");
+          span.textContent = letra;
+          span.style.opacity = 0;
+          container.appendChild(span);
+        });
+
+        // Cursor piscando
+        const cursor = document.createElement("span");
+        cursor.textContent = "";
+        cursor.style.marginLeft = "5px";
+        cursor.style.animation = "piscar 1s infinite";
+        container.appendChild(cursor);
+
+        // Aplica a animação com delay baseado no índice
+        anime({
+          targets: `#${contato.id} span`,
+          opacity: [0, 1],
+          easing: "easeInOutQuad",
+          duration: 40,
+          delay: anime.stagger(60, { start: index * 1000 }), // delay entre os blocos
+        });
+      });
+    </script>
+  </body>
+</html>
