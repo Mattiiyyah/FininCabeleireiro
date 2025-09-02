@@ -20,3 +20,16 @@ O objetivo foi criar uma **vitrine digital** para um salão de cabeleireiro loca
 ---
 
 ## 📸 Demonstração  
+- **TELA INICIAL**
+  <img width="1865" height="887" alt="image" src="https://github.com/user-attachments/assets/66a3fbd0-6f03-4dee-b858-32d76b3a81ea" />
+- **TELA SOBRE NÓS**
+  <img width="1865" height="887" alt="image" src="https://github.com/user-attachments/assets/54bece13-1123-407f-87b1-9b7700c7e7fc" />
+- **TELA CONTATO**
+  <img width="1865" height="887" alt="image" src="https://github.com/user-attachments/assets/403b150d-dcf1-404e-bbca-12bbcbd34f57" />
+- **LINK DE ACESSO**
+- https://finincabeleireiro.github.io/FininCabeleireiro/contato.html
+
+## 👨‍💻 Equipe de Desenvolvimento
+
+Projeto realizado em grupo no 1º semestre do curso de Informática para Negócios, com foco em colaboração e prática dos fundamentos de programação web.
+Desenvolvedores: Pedro Linha, Bruno Neves, Matheus de Paula 
