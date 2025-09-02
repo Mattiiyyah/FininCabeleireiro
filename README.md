@@ -27,7 +27,7 @@ O objetivo foi criar uma **vitrine digital** para um salão de cabeleireiro loca
 - **TELA CONTATO**
   <img width="1865" height="887" alt="image" src="https://github.com/user-attachments/assets/403b150d-dcf1-404e-bbca-12bbcbd34f57" />
 - **LINK DE ACESSO**
-- https://finincabeleireiro.github.io/FininCabeleireiro/contato.html
+  https://finincabeleireiro.github.io/FininCabeleireiro/contato.html
 
 ## 👨‍💻 Equipe de Desenvolvimento
 
